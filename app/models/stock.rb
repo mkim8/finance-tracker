@@ -1,4 +1,7 @@
 class Stock < ActiveRecord::Base
+  has_many :user_stocks
+  has_many :users, through: :user_stocks
+  
   def self.new_from_lookup(ticker_symbol)
     begin
       looked_up_stock = StockQuote::Stock.quote(ticker_symbol)
@@ -11,5 +14,8 @@ class Stock < ActiveRecord::Base
   
   def self.strip_commas(number)
     number.to_s.gsub(",", "")
+  end
+  
+  def self.find_by_ticker(ticker_symbol)
   end
 end
