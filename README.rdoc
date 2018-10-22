@@ -2,6 +2,9 @@
 
 This is the finance tracker app from the Complete Ruby on Rails Developer course.
 
+- Build form
+- Route -> search_stocks
+- Controller ->action - stocks_controller.rb search
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
