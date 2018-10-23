@@ -6,5 +6,11 @@ This is the finance tracker app from the Complete Ruby on Rails Developer course
 - Route -> search_stocks
 - Controller ->action - stocks_controller.rb search
 
+Stock Restrictions
+
+- Users can add max 10 stocks
+- Users cannot add a stock twice
+Since this is a restriction on the User - Add it to the user model
+
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
